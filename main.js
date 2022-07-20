@@ -67,4 +67,25 @@ stringLength(5)
 })
 .catch( (error) => {
     console.log('Small Number')
-})
+});
+
+// Extra HW 1 of 2 - Write a JavaScript function to check whether a string is blank or not
+
+blankString =  function(input) {
+    if (input.length === 0)
+    return true;
+    else 
+    return false;
+  }
+console.log(blankString(''));
+console.log(blankString('abc'));
+
+// Extra HW 2 of 2 - Write a JavaScript function to extract a specified number of characters from a string.
+
+getString = function (str1, length) {
+  
+    if ((str1.constructor === String) && (length>0)) {
+        return str1.slice(0, length);
+    }
+};
+console.log(getString("Javascript is difficult to understand",4));
